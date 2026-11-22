@@ -1,0 +1,38 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Data & Lakehouse storage generated at runtime
+data/lakehouse/bronze/*
+data/lakehouse/silver/*
+data/lakehouse/gold/*
+!data/lakehouse/bronze/.gitkeep
+!data/lakehouse/silver/.gitkeep
+!data/lakehouse/gold/.gitkeep
+data/raw_sources/*
+!data/raw_sources/.gitkeep
+
+# SQLite database and query logs
+*.db
+*.sqlite3
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test coverage & caches
+.coverage
+htmlcov/
+.pytest_cache/
